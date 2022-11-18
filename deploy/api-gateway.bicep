@@ -6,7 +6,7 @@ module infrastructure 'modules/api-management.bicep' = {
   name: 'api-management'
   params: {
     location: location
-    apiManagementName: '${resourceNamePrefix}-api-management'
+    apiManagementName: '${resourceNamePrefix}-peterlil'
     selfHostedGatewayName: selfHostedGatewayName
   }
 }

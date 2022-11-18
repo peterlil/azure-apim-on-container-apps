@@ -22,26 +22,11 @@ module containerLandscape 'modules/container-landscape.bicep' = {
     location: location
     containerEnvironmentName: '${resourceNamePrefix}-container-landscape'
     apiGatewayContainerAppName: '${resourceNamePrefix}-api-gateway'
-    baconApiContainerAppName: '${resourceNamePrefix}-bacon-api'
     apiManagementName: apiManagementName
     selfHostedGatewayToken: selfHostedGatewayToken
     logAnalyticsWorkspaceId: infrastructure.outputs.logAnalyticsWorkspaceId
   }
   dependsOn: [
     infrastructure
-  ]
-}
-
-// Container App integration in API gateway
-module containerIntegration 'modules/integrate-container-app-in-api-gateway.bicep' = {
-  name: 'container-integration'
-  params: {
-    apiManagementName: apiManagementName
-    selfHostedGatewayName: selfHostedGatewayName
-    baconApiUrl: containerLandscape.outputs.baconApiUrl
-  }
-  dependsOn: [
-    infrastructure
-    containerLandscape
   ]
 }

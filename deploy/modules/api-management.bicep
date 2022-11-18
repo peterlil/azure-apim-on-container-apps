@@ -3,17 +3,8 @@ param apiManagementName string
 param selfHostedGatewayName string
 
 // API Management Instance
-resource apiManagement 'Microsoft.ApiManagement/service@2021-08-01' = {
+resource apiManagement 'Microsoft.ApiManagement/service@2021-08-01' existing = {
   name: apiManagementName
-  location: location
-  sku: {
-    name: 'Developer'
-    capacity: 1
-  }
-  properties: {
-    publisherName: 'Contoso'
-    publisherEmail: '<email-address>'
-  }
 }
 
 // Gateway

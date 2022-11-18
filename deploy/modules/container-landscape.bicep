@@ -1,7 +1,6 @@
 param location string
 param containerEnvironmentName string
 param apiGatewayContainerAppName string
-param baconApiContainerAppName string
 param logAnalyticsWorkspaceId string
 param apiManagementName string
 
@@ -84,51 +83,4 @@ resource apiGatewayContainerApp 'Microsoft.App/containerApps@2022-01-01-preview'
   }
 }
 
-var targetPort = 80
-resource baconApiContainerApp 'Microsoft.App/containerApps@2022-01-01-preview' = {
-  name: baconApiContainerAppName
-  location: location
-  properties: {
-    managedEnvironmentId: environment.id
-    configuration: {
-      ingress: {
-        external: false
-        targetPort: 80
-        allowInsecure: true
-      }
-      dapr: {
-        enabled: false
-      }
-      secrets: []
-    }
-    template: {
-      containers: [
-        {
-          image: 'ghcr.io/tomkerkhove/bacon-api:latest'
-          name: 'bacon-api'
-          resources: {
-            cpu: '0.5'
-            memory: '1.0Gi'
-          }
-          env: [
-            {
-              name: 'ASPNETCORE_ENVIRONMENT'
-              value: 'Production'
-            }
-            {
-              name: 'ASPNETCORE_URLS'
-              value: 'http://+:${targetPort}'
-            }
-          ]
-        }
-      ]
-      scale: {
-        minReplicas: 1
-        maxReplicas: 1
-        rules:[]
-      }
-    }
-  }
-}
 
-output baconApiUrl string = baconApiContainerApp.properties.configuration.ingress.fqdn
