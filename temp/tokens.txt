@@ -1,0 +1,197 @@
+Ocp-Apim-Trace: true
+Authorization
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiI5OTdmMGZkMi1hNDllLTQxNDItOWE4MC04NWY5NTU0YmI5NDkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vN2JjYWU5MWEtNDMyNS00ODIxLTg0YjEtYWFjOWQ1Y2FhYTIyL3YyLjAiLCJpYXQiOjE2Njg2MTQ1MDAsIm5iZiI6MTY2ODYxNDUwMCwiZXhwIjoxNjY4NjE4ODkzLCJhaW8iOiJBVFFBeS84VEFBQUFCSVlFQUpod1haVWg4YTR6QTBDKzVLZkxwdHJWRnhYUWFRSXhSY3BlMW1tME5JTm43MDdpOU1FS0JrTGdvYXZ3IiwiYXpwIjoiZTZjZTJmYzYtZjUzYS00MDg5LWI1MjktYzQyMzBmNGVmYzFiIiwiYXpwYWNyIjoiMSIsIm5hbWUiOiJQZXRlciBMaWxqZW5yb3RoIiwib2lkIjoiZDBlNmM4ZjMtODM3OC00MDI5LWE5ZjEtM2NiMDljYTI5OGI0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGV0ZXJsaWxAbW5nZW52MzE5ODI4Lm9ubWljcm9zb2Z0LmNvbSIsInJoIjoiMC5BVmtBR3VuS2V5VkRJVWlFc2FySjFjcXFJdElQZjVtZXBFSkJtb0NGLVZWTHVVbWRBR2suIiwic2NwIjoiVXNlQXBpIiwic3ViIjoiRXZ1RlJsTHZ3eGNyeTFXdS11OTRaRzg2YmVHaS1CTXdzdjQ1Rmw3SFJvUSIsInRpZCI6IjdiY2FlOTFhLTQzMjUtNDgyMS04NGIxLWFhYzlkNWNhYWEyMiIsInV0aSI6ImQtb29hTGd1c0VxQ01GMkUtY3hCQUEiLCJ2ZXIiOiIyLjAifQ.mP9zH7rxur92QF0xzh1q1bVyTMkNardG1KDHVsiAxUeqSFrVG49_SgycZjjky-DiJV6ePFS78RZKysj_iKbI5zCF0SH6uKwy7j8QtrD-brjxTQWBT8OKOljvmQ6RSoVcKPZYkfY2ebQQawk9olfafGEgDds3sh5TO5NwsuNwa0NcLIYZze2l-VX_YXEuVIZM0xybO08Asv3KZtyPBDWFPucOJc1RJLB-yNdQvPih3-03frv_8jzSTtwZF8wbjspnBxgPC0lwkD25ovsq01xhg6IaFmyN8LAVM0PMxMaMqGlWEnuHqKvR63ib8RY7SpP75Lh2Cm80q94BAEBVNmnRDw
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiI5OTdmMGZkMi1hNDllLTQxNDItOWE4MC04NWY5NTU0YmI5NDkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vN2JjYWU5MWEtNDMyNS00ODIxLTg0YjEtYWFjOWQ1Y2FhYTIyL3YyLjAiLCJpYXQiOjE2Njg3NjA5OTUsIm5iZiI6MTY2ODc2MDk5NSwiZXhwIjoxNjY4NzY0OTQxLCJhaW8iOiJBVFFBeS84VEFBQUFXZ3lmbXZUcmp2WGh3MlAxRVpLcXBvUXdQTnFXREllTDlCSzdGaURTSG1tZlNtcVV2Ri9UVm91VTBZcWlJYnd2IiwiYXpwIjoiZTZjZTJmYzYtZjUzYS00MDg5LWI1MjktYzQyMzBmNGVmYzFiIiwiYXpwYWNyIjoiMSIsIm5hbWUiOiJQZXRlciBMaWxqZW5yb3RoIiwib2lkIjoiZDBlNmM4ZjMtODM3OC00MDI5LWE5ZjEtM2NiMDljYTI5OGI0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGV0ZXJsaWxAbW5nZW52MzE5ODI4Lm9ubWljcm9zb2Z0LmNvbSIsInJoIjoiMC5BVmtBR3VuS2V5VkRJVWlFc2FySjFjcXFJdElQZjVtZXBFSkJtb0NGLVZWTHVVbWRBR2suIiwic2NwIjoiVXNlQXBpIiwic3ViIjoiRXZ1RlJsTHZ3eGNyeTFXdS11OTRaRzg2YmVHaS1CTXdzdjQ1Rmw3SFJvUSIsInRpZCI6IjdiY2FlOTFhLTQzMjUtNDgyMS04NGIxLWFhYzlkNWNhYWEyMiIsInV0aSI6Ii1uZ3R0SXp3UVVPd0FLY1Jibng0QUEiLCJ2ZXIiOiIyLjAifQ.mxr0Av1ERtv3E8_69ft6P_pLpgB7d9pVf5NG39__EMKZYbhi8FH8rL3quVxszVnAvIeubTNxQBsWPTLZNiNGt-YH2fNA3Jm9fL63lppERF5_NBv-wMsfQFmiyWm3KU4pXkZjq58CBaDib-0PtcoNjE0f5HYiPnace1HCWzIlw5mitg-KU8Pg5I5fmPyST3pnXNKiDXbpo5EgmyiktNd3X7kbhL4d-qhm-1QzldP--9j6pwpMZoonh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw
+
+
+
+api-inspector (0.192 ms)
+{
+    "request": {
+        "method": "GET",
+        "url": "https://shgw2.peterlabs.net/echo/resource?param1=sample",
+        "headers": [
+            {
+                "name": "Accept",
+                "value": "*/*"
+            },
+            {
+                "name": "Host",
+                "value": "shgw2.peterlabs.net"
+            },
+            {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+            },
+            {
+                "name": "Accept-Encoding",
+                "value": "gzip,deflate,br"
+            },
+            {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.9,sv;q=0.8"
+            },
+            {
+                "name": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiI5OTdmMGZkMi1hNDllLTQxNDItOWE4MC04NWY5NTU0YmI5NDkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vN2JjYWU5MWEtNDMyNS00ODIxLTg0YjEtYWFjOWQ1Y2FhYTIyL3YyLjAiLCJpYXQiOjE2Njg3NjA5OTUsIm5iZiI6MTY2ODc2MDk5NSwiZXhwIjoxNjY4NzY0OTQxLCJhaW8iOiJBVFFBeS84VEFBQUFXZ3lmbXZUcmp2WGh3MlAxRVpLcXBvUXdQTnFXREllTDlCSzdGaURTSG1tZlNtcVV2Ri9UVm91VTBZcWlJYnd2IiwiYXpwIjoiZTZjZTJmYzYtZjUzYS00MDg5LWI1MjktYzQyMzBmNGVmYzFiIiwiYXpwYWNyIjoiMSIsIm5hbWUiOiJQZXRlciBMaWxqZW5yb3RoIiwib2lkIjoiZDBlNmM4ZjMtODM3OC00MDI5LWE5ZjEtM2NiMDljYTI5OGI0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGV0ZXJsaWxAbW5nZW52MzE5ODI4Lm9ubWljcm9zb2Z0LmNvbSIsInJoIjoiMC5BVmtBR3VuS2V5VkRJVWlFc2FySjFjcXFJdElQZjVtZXBFSkJtb0NGLVZWTHVVbWRBR2suIiwic2NwIjoiVXNlQXBpIiwic3ViIjoiRXZ1RlJsTHZ3eGNyeTFXdS11OTRaRzg2YmVHaS1CTXdzdjQ1Rmw3SFJvUSIsInRpZCI6IjdiY2FlOTFhLTQzMjUtNDgyMS04NGIxLWFhYzlkNWNhYWEyMiIsInV0aSI6Ii1uZ3R0SXp3UVVPd0FLY1Jibng0QUEiLCJ2ZXIiOiIyLjAifQ.mxr0Av1ERtv3E8_69ft6P_pLpgB7d9pVf5NG39__EMKZYbhi8FH8rL3quVxszVnAvIeubTNxQBsWPTLZNiNGt-YH2fNA3Jm9fL63lppERF5_NBv-wMsfQFmiyWm3KU4pXkZjq58CBaDib-0PtcoNjE0f5HYiPnace1HCWzIlw5mitg-KU8Pg5I5fmPyST3pnXNKiDXbpo5EgmyiktNd3X7kbhL4d-qhm-1QzldP--9j6pwpMZoonh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw"
+            },
+            {
+                "name": "Origin",
+                "value": "https://apimanagement.hosting.portal.azure.net"
+            },
+            {
+                "name": "Referer",
+                "value": "https://apimanagement.hosting.portal.azure.net/"
+            },
+            {
+                "name": "sec-ch-ua",
+                "value": "\"Not_A Brand\";v=\"99\",\"Microsoft Edge\";v=\"109\",\"Chromium\";v=\"109\""
+            },
+            {
+                "name": "DNT",
+                "value": "1"
+            },
+            {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+            },
+            {
+                "name": "ocp-apim-subscription-key",
+                "value": "336afba91a1643c68347a6dc2ec37b6a"
+            },
+            {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+            },
+            {
+                "name": "sec-fetch-site",
+                "value": "cross-site"
+            },
+            {
+                "name": "sec-fetch-mode",
+                "value": "cors"
+            },
+            {
+                "name": "sec-fetch-dest",
+                "value": "empty"
+            }
+        ]
+    }
+}
+api-inspector (0.005 ms)
+{
+    "configuration": {
+        "api": {
+            "from": "/echo",
+            "to": {
+                "scheme": "http",
+                "host": "echoapi.cloudapp.net",
+                "port": 80,
+                "path": "/api",
+                "queryString": "",
+                "query": {},
+                "isDefaultPort": true
+            },
+            "version": null,
+            "revision": "1"
+        },
+        "operation": {
+            "method": "GET",
+            "uriTemplate": "/resource"
+        },
+        "user": "-",
+        "product": "-"
+    }
+}
+cors (0.031 ms)
+"Cross domain request was well formed and was allowed to proceed. CORS related headers were added to the response."
+set-variable (0.097 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": " \n            string appId = \"NOAUTH\";\n            String version=\"1.0\";\n            string authHeader = context.Request.Headers.GetValueOrDefault(\"Authorization\", \"\");\n            if (authHeader?.Length > 0)\n            {\n                  string[] authHeaderParts = authHeader.Split(' ');\n                  if (authHeaderParts?.Length == 2 && authHeaderParts[0].Equals(\"Bearer\", StringComparison.InvariantCultureIgnoreCase))\n                  {\n                        Jwt jwt;\n                         if (authHeaderParts[1].TryParseJwt(out jwt))\n                         {\n                             version=jwt.Claims.GetValueOrDefault(\"ver\", \"1.0\");\n                             if(version==\"1.0\")\n                             {   \n                                appId = jwt.Claims.GetValueOrDefault(\"appid\", \"NOAPPID\");\n                             }\n                             if(version==\"2.0\")\n                             {\n                                appId = jwt.Claims.GetValueOrDefault(\"azp\", \"NOAPPID\");\n                             }\n\n                             appId=appId;  \n                         } \n                   }            \n             }\n            return appId;\n        ",
+    "value": "e6ce2fc6-f53a-4089-b529-c4230f4efc1b"
+}
+set-variable (0.009 ms)
+{
+    "message": "Context variable was successfully set.",
+    "name": "clientId",
+    "value": "e6ce2fc6-f53a-4089-b529-c4230f4efc1b"
+}
+set-variable (0.035 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "\n            string iss = \"NOISS\";\n            string authHeader = context.Request.Headers.GetValueOrDefault(\"Authorization\", \"\");\n\n            if (authHeader?.Length > 0)\n            { \n                string[] authHeaderParts = authHeader.Split(' ');\n\n                if (authHeaderParts?.Length == 2 && authHeaderParts[0].Equals(\"Bearer\", StringComparison.InvariantCultureIgnoreCase))\n                {\n                    Jwt jwt;\n                    if (authHeaderParts[1].TryParseJwt(out jwt))\n                    {\n\n                        iss = authHeaderParts[1];\n\n                    }\n                }\n            }\n\n            return iss;\n        ",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiI5OTdmMGZkMi1hNDllLTQxNDItOWE4MC04NWY5NTU0YmI5NDkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vN2JjYWU5MWEtNDMyNS00ODIxLTg0YjEtYWFjOWQ1Y2FhYTIyL3YyLjAiLCJpYXQiOjE2Njg3NjA5OTUsIm5iZiI6MTY2ODc2MDk5NSwiZXhwIjoxNjY4NzY0OTQxLCJhaW8iOiJBVFFBeS84VEFBQUFXZ3lmbXZUcmp2WGh3MlAxRVpLcXBvUXdQTnFXREllTDlCSzdGaURTSG1tZlNtcVV2Ri9UVm91VTBZcWlJYnd2IiwiYXpwIjoiZTZjZTJmYzYtZjUzYS00MDg5LWI1MjktYzQyMzBmNGVmYzFiIiwiYXpwYWNyIjoiMSIsIm5hbWUiOiJQZXRlciBMaWxqZW5yb3RoIiwib2lkIjoiZDBlNmM4ZjMtODM3OC00MDI5LWE5ZjEtM2NiMDljYTI5OGI0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGV0ZXJsaWxAbW5nZW52MzE5ODI4Lm9ubWljcm9zb2Z0LmNvbSIsInJoIjoiMC5BVmtBR3VuS2V5VkRJVWlFc2FySjFjcXFJdElQZjVtZXBFSkJtb0NGLVZWTHVVbWRBR2suIiwic2NwIjoiVXNlQXBpIiwic3ViIjoiRXZ1RlJsTHZ3eGNyeTFXdS11OTRaRzg2YmVHaS1CTXdzdjQ1Rmw3SFJvUSIsInRpZCI6IjdiY2FlOTFhLTQzMjUtNDgyMS04NGIxLWFhYzlkNWNhYWEyMiIsInV0aSI6Ii1uZ3R0SXp3UVVPd0FLY1Jibng0QUEiLCJ2ZXIiOiIyLjAifQ.mxr0Av1ERtv3E8_69ft6P_pLpgB7d9pVf5NG39__EMKZYbhi8FH8rL3quVxszVnAvIeubTNxQBsWPTLZNiNGt-YH2fNA3Jm9fL63lppERF5_NBv-wMsfQFmiyWm3KU4pXkZjq58CBaDib-0PtcoNjE0f5HYiPnace1HCWzIlw5mitg-KU8Pg5I5fmPyST3pnXNKiDXbpo5EgmyiktNd3X7kbhL4d-qhm-1QzldP--9j6pwpMZoonh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw"
+}
+set-variable (0.001 ms)
+{
+    "message": "Context variable was successfully set.",
+    "name": "OauthToken",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiI5OTdmMGZkMi1hNDllLTQxNDItOWE4MC04NWY5NTU0YmI5NDkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vN2JjYWU5MWEtNDMyNS00ODIxLTg0YjEtYWFjOWQ1Y2FhYTIyL3YyLjAiLCJpYXQiOjE2Njg3NjA5OTUsIm5iZiI6MTY2ODc2MDk5NSwiZXhwIjoxNjY4NzY0OTQxLCJhaW8iOiJBVFFBeS84VEFBQUFXZ3lmbXZUcmp2WGh3MlAxRVpLcXBvUXdQTnFXREllTDlCSzdGaURTSG1tZlNtcVV2Ri9UVm91VTBZcWlJYnd2IiwiYXpwIjoiZTZjZTJmYzYtZjUzYS00MDg5LWI1MjktYzQyMzBmNGVmYzFiIiwiYXpwYWNyIjoiMSIsIm5hbWUiOiJQZXRlciBMaWxqZW5yb3RoIiwib2lkIjoiZDBlNmM4ZjMtODM3OC00MDI5LWE5ZjEtM2NiMDljYTI5OGI0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGV0ZXJsaWxAbW5nZW52MzE5ODI4Lm9ubWljcm9zb2Z0LmNvbSIsInJoIjoiMC5BVmtBR3VuS2V5VkRJVWlFc2FySjFjcXFJdElQZjVtZXBFSkJtb0NGLVZWTHVVbWRBR2suIiwic2NwIjoiVXNlQXBpIiwic3ViIjoiRXZ1RlJsTHZ3eGNyeTFXdS11OTRaRzg2YmVHaS1CTXdzdjQ1Rmw3SFJvUSIsInRpZCI6IjdiY2FlOTFhLTQzMjUtNDgyMS04NGIxLWFhYzlkNWNhYWEyMiIsInV0aSI6Ii1uZ3R0SXp3UVVPd0FLY1Jibng0QUEiLCJ2ZXIiOiIyLjAifQ.mxr0Av1ERtv3E8_69ft6P_pLpgB7d9pVf5NG39__EMKZYbhi8FH8rL3quVxszVnAvIeubTNxQBsWPTLZNiNGt-YH2fNA3Jm9fL63lppERF5_NBv-wMsfQFmiyWm3KU4pXkZjq58CBaDib-0PtcoNjE0f5HYiPnace1HCWzIlw5mitg-KU8Pg5I5fmPyST3pnXNKiDXbpo5EgmyiktNd3X7kbhL4d-qhm-1QzldP--9j6pwpMZoonh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw"
+}
+trace (0.007 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "(string)context.Variables[\"OauthToken\"]",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiI5OTdmMGZkMi1hNDllLTQxNDItOWE4MC04NWY5NTU0YmI5NDkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vN2JjYWU5MWEtNDMyNS00ODIxLTg0YjEtYWFjOWQ1Y2FhYTIyL3YyLjAiLCJpYXQiOjE2Njg3NjA5OTUsIm5iZiI6MTY2ODc2MDk5NSwiZXhwIjoxNjY4NzY0OTQxLCJhaW8iOiJBVFFBeS84VEFBQUFXZ3lmbXZUcmp2WGh3MlAxRVpLcXBvUXdQTnFXREllTDlCSzdGaURTSG1tZlNtcVV2Ri9UVm91VTBZcWlJYnd2IiwiYXpwIjoiZTZjZTJmYzYtZjUzYS00MDg5LWI1MjktYzQyMzBmNGVmYzFiIiwiYXpwYWNyIjoiMSIsIm5hbWUiOiJQZXRlciBMaWxqZW5yb3RoIiwib2lkIjoiZDBlNmM4ZjMtODM3OC00MDI5LWE5ZjEtM2NiMDljYTI5OGI0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGV0ZXJsaWxAbW5nZW52MzE5ODI4Lm9ubWljcm9zb2Z0LmNvbSIsInJoIjoiMC5BVmtBR3VuS2V5VkRJVWlFc2FySjFjcXFJdElQZjVtZXBFSkJtb0NGLVZWTHVVbWRBR2suIiwic2NwIjoiVXNlQXBpIiwic3ViIjoiRXZ1RlJsTHZ3eGNyeTFXdS11OTRaRzg2YmVHaS1CTXdzdjQ1Rmw3SFJvUSIsInRpZCI6IjdiY2FlOTFhLTQzMjUtNDgyMS04NGIxLWFhYzlkNWNhYWEyMiIsInV0aSI6Ii1uZ3R0SXp3UVVPd0FLY1Jibng0QUEiLCJ2ZXIiOiIyLjAifQ.mxr0Av1ERtv3E8_69ft6P_pLpgB7d9pVf5NG39__EMKZYbhi8FH8rL3quVxszVnAvIeubTNxQBsWPTLZNiNGt-YH2fNA3Jm9fL63lppERF5_NBv-wMsfQFmiyWm3KU4pXkZjq58CBaDib-0PtcoNjE0f5HYiPnace1HCWzIlw5mitg-KU8Pg5I5fmPyST3pnXNKiDXbpo5EgmyiktNd3X7kbhL4d-qhm-1QzldP--9j6pwpMZoonh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw"
+}
+trace (0.004 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "String.Format(\"{0} | {1}\", context.Api.Name, context.Operation.Name)",
+    "value": "Echo API | Retrieve resource"
+}
+JWT Token (0.001 ms)
+"Echo API | Retrieve resource"
+cache-lookup-value (0.003 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "(string)context.Variables[\"clientId\"] + \"_HapiToken\"",
+    "value": "e6ce2fc6-f53a-4089-b529-c4230f4efc1b_HapiToken"
+}
+cache-lookup-value (0.002 ms)
+"Using cache 'home'."
+cache-lookup-value (43.480 ms)
+{
+    "message": "Cache lookup resulted in a hit.",
+    "key": "2_e6ce2fc6-f53a-4089-b529-c4230f4efc1b_HapiToken",
+    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiI5OTdmMGZkMi1hNDllLTQxNDItOWE4MC04NWY5NTU0YmI5NDkiLCJpc3MiOiJodHRwczovL2xvZ2luLm1pY3Jvc29mdG9ubGluZS5jb20vN2JjYWU5MWEtNDMyNS00ODIxLTg0YjEtYWFjOWQ1Y2FhYTIyL3YyLjAiLCJpYXQiOjE2Njg3NjA5OTUsIm5iZiI6MTY2ODc2MDk5NSwiZXhwIjoxNjY4NzY0OTQxLCJhaW8iOiJBVFFBeS84VEFBQUFXZ3lmbXZUcmp2WGh3MlAxRVpLcXBvUXdQTnFXREllTDlCSzdGaURTSG1tZlNtcVV2Ri9UVm91VTBZcWlJYnd2IiwiYXpwIjoiZTZjZTJmYzYtZjUzYS00MDg5LWI1MjktYzQyMzBmNGVmYzFiIiwiYXpwYWNyIjoiMSIsIm5hbWUiOiJQZXRlciBMaWxqZW5yb3RoIiwib2lkIjoiZDBlNmM4ZjMtODM3OC00MDI5LWE5ZjEtM2NiMDljYTI5OGI0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGV0ZXJsaWxAbW5nZW52MzE5ODI4Lm9ubWljcm9zb2Z0LmNvbSIsInJoIjoiMC5BVmtBR3VuS2V5VkRJVWlFc2FySjFjcXFJdElQZjVtZXBFSkJtb0NGLVZWTHVVbWRBR2suIiwic2NwIjoiVXNlQXBpIiwic3ViIjoiRXZ1RlJsTHZ3eGNyeTFXdS11OTRaRzg2YmVHaS1CTXdzdjQ1Rmw3SFJvUSIsInRpZCI6IjdiY2FlOTFhLTQzMjUtNDgyMS04NGIxLWFhYzlkNWNhYWEyMiIsInV0aSI6Ii1uZ3R0SXp3UVVPd0FLY1Jibng0QUEiLCJ2ZXIiOiIyLjAifQ.mxr0Av1ERtv3E8_69ft6P_pLpgB7d9pVf5NG39__EMKZYbhi8FH8rL3quVxszVnAvIeubTNxQBsWPTLZNiNGt-YH2fNA3Jm9fL63lppERF5_NBv-wMsfQFmiyWm3KU4pXkZjq58CBaDib-0PtcoNjE0f5HYiPnace1HCWzIlw5mitg-KU8Pg5I5fmPyST3pnXNKiDXbpo5EgmyiktNd3X7kbhL4d-qhm-1QzldP--9j6pwpMZoonh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw",
+    "variableName": "hapitoken"
+}
+cache-lookup-value (0.032 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "(string)context.Variables[\"clientId\"] + \"_GoogleIdToken\"",
+    "value": "e6ce2fc6-f53a-4089-b529-c4230f4efc1b_GoogleIdToken"
+}
+cache-lookup-value (0.004 ms)
+"Using cache 'home'."
+cache-lookup-value (43.382 ms)
+{
+    "message": "Cache lookup resulted in a hit.",
+    "key": "2_e6ce2fc6-f53a-4089-b529-c4230f4efc1b_GoogleIdToken",
+    "value": "onh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw",
+    "variableName": "googleidtoken"
+}
+choose (0.047 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "context.Variables.ContainsKey(\"hapitoken\") && context.Variables.ContainsKey(\"googleidtoken\") && System.String.Equals((string)context.Variables[\"hapitoken\"],(string)context.Variables[\"OauthToken\"])",
+    "value": true
+}
+set-header (0.018 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "\"Bearer \" + (string)context.Variables[\"googleidtoken\"]",
+    "value": "Bearer onh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw"
+}
+set-header (0.012 ms)
+{
+    "message": "Specified value was assigned to the header (see below).",
+    "header": {
+        "name": "Cool-Header",
+        "value": "Bearer onh509amwlK0D5iq6EamGwyeSTmKM0JiphG6IVjTftmAtNyaIZjJTdIOJVemA7nDsZLtSP6Vz63jnDC5B3zrtBRYdYOjxJ0hGUNw"
+    }
+}

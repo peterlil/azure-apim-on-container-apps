@@ -1,0 +1,213 @@
+        <!-- Works -->
+        <set-variable name="coolHeaderFromRequest" value="@{ 
+            string appId = "NOAUTH";
+            String version="1.0";
+            string coolHeader = context.Request.Headers.GetValueOrDefault("Cool-header", "");
+            return coolHeader;
+        }" />
+        <cache-lookup-value key="@("CoolHeader")" variable-name="coolHeaderFromCache" caching-type="external" />
+        <cache-store-value key="@("CoolHeader")" value="@((string)context.Variables["coolHeaderFromRequest"])" duration="30" caching-type="external" />
+
+
+        <set-variable name="clientId" value="@{ 
+            string header1 = context.Request.Headers.GetValueOrDefault("header1", "");
+            
+            return header1;
+        }" />
+        <set-variable name="OauthToken" value="@{
+            string iss = "NOISS";
+            string header2 = context.Request.Headers.GetValueOrDefault("header2", "");
+
+            return header2;
+        }" />
+        <!-- <trace source="JWT Token" severity="information">
+            <message>@(String.Format("{0} | {1}", context.Api.Name, context.Operation.Name))</message>
+            <metadata name="OauthToken" value="@((string)context.Variables["OauthToken"])" />
+        </trace> -->
+        <cache-lookup-value key="@((string)context.Variables["clientId"] + "_HapiToken")" variable-name="hapitoken" caching-type="external" />
+        <cache-store-value key="@((string)context.Variables["clientId"] + "_HapiToken")" value="@((string)context.Variables["OauthToken"])" duration="120" caching-type="external" />
+
+
+        <!-- Does not work -->-->
+        <set-variable name="clientId" value="@{ 
+            string appId = "NOAUTH";
+            String version="1.0";
+            string authHeader = context.Request.Headers.GetValueOrDefault("Authorization", "");
+            if (authHeader?.Length > 0)
+            {
+                  string[] authHeaderParts = authHeader.Split(' ');
+                  if (authHeaderParts?.Length == 2 && authHeaderParts[0].Equals("Bearer", StringComparison.InvariantCultureIgnoreCase))
+                  {
+                        Jwt jwt;
+                         if (authHeaderParts[1].TryParseJwt(out jwt))
+                         {
+                             version=jwt.Claims.GetValueOrDefault("ver", "1.0");
+                             if(version=="1.0")
+                             {   
+                                appId = jwt.Claims.GetValueOrDefault("appid", "NOAPPID");
+                             }
+                             if(version=="2.0")
+                             {
+                                appId = jwt.Claims.GetValueOrDefault("azp", "NOAPPID");
+                             }
+
+                             appId=appId;  
+                         } 
+                   }            
+             }
+            return appId;
+        }" />
+        <set-variable name="OauthToken" value="@{
+            string iss = "NOISS";
+            string header2 = context.Request.Headers.GetValueOrDefault("header2", "");
+
+            return header2;
+        }" />
+        <!-- <trace source="JWT Token" severity="information">
+            <message>@(String.Format("{0} | {1}", context.Api.Name, context.Operation.Name))</message>
+            <metadata name="OauthToken" value="@((string)context.Variables["OauthToken"])" />
+        </trace> -->
+        <cache-lookup-value key="@((string)context.Variables["clientId"] + "_HapiToken")" variable-name="hapitoken" caching-type="external" />
+        <cache-store-value key="@((string)context.Variables["clientId"] + "_HapiToken")" value="@((string)context.Variables["OauthToken"])" duration="120" caching-type="external" />
+
+
+
+
+        <!-- Does not work -->
+        <set-variable name="clientId" value="@{ 
+            string appId = "NOAUTH";
+            String version="1.0";
+            string authHeader = context.Request.Headers.GetValueOrDefault("Authorization", "");
+            if (authHeader?.Length > 0)
+            {
+                  string[] authHeaderParts = authHeader.Split(' ');
+                  if (authHeaderParts?.Length == 2 && authHeaderParts[0].Equals("Bearer", StringComparison.InvariantCultureIgnoreCase))
+                  {
+                        Jwt jwt;
+                         if (authHeaderParts[1].TryParseJwt(out jwt))
+                         {
+                             version=jwt.Claims.GetValueOrDefault("ver", "1.0");
+                             if(version=="1.0")
+                             {   
+                                appId = jwt.Claims.GetValueOrDefault("appid", "NOAPPID");
+                             }
+                             if(version=="2.0")
+                             {
+                                appId = jwt.Claims.GetValueOrDefault("azp", "NOAPPID");
+                             }
+
+                             appId=appId;  
+                         } 
+                   }            
+             }
+            return appId;
+        }" />
+        <set-variable name="OauthToken" value="@{
+            string iss = "NOISS";
+            string authHeader = context.Request.Headers.GetValueOrDefault("Authorization", "");
+
+            if (authHeader?.Length > 0)
+            { 
+                string[] authHeaderParts = authHeader.Split(' ');
+
+                if (authHeaderParts?.Length == 2 && authHeaderParts[0].Equals("Bearer", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    Jwt jwt;
+                    if (authHeaderParts[1].TryParseJwt(out jwt))
+                    {
+
+                        iss = authHeaderParts[1];
+
+                    }
+                }
+            }
+
+            return iss;
+        }" />
+        <!-- <trace source="JWT Token" severity="information">
+            <message>@(String.Format("{0} | {1}", context.Api.Name, context.Operation.Name))</message>
+            <metadata name="OauthToken" value="@((string)context.Variables["OauthToken"])" />
+        </trace> -->
+        <cache-lookup-value key="@((string)context.Variables["clientId"] + "_HapiToken")" variable-name="hapitoken" caching-type="external" />
+        <cache-store-value key="@((string)context.Variables["clientId"] + "_HapiToken")" value="@((string)context.Variables["OauthToken"])" duration="120" caching-type="external" />
+
+        
+        <!-- Does not work -->
+        <set-variable name="clientId" value="@{ 
+            string appId = "NOAUTH";
+            String version="1.0";
+            string authHeader = context.Request.Headers.GetValueOrDefault("Authorization", "");
+            if (authHeader?.Length > 0)
+            {
+                  string[] authHeaderParts = authHeader.Split(' ');
+                  if (authHeaderParts?.Length == 2 && authHeaderParts[0].Equals("Bearer", StringComparison.InvariantCultureIgnoreCase))
+                  {
+                        Jwt jwt;
+                         if (authHeaderParts[1].TryParseJwt(out jwt))
+                         {
+                             version=jwt.Claims.GetValueOrDefault("ver", "1.0");
+                             if(version=="1.0")
+                             {   
+                                appId = jwt.Claims.GetValueOrDefault("appid", "NOAPPID");
+                             }
+                             if(version=="2.0")
+                             {
+                                appId = jwt.Claims.GetValueOrDefault("azp", "NOAPPID");
+                             }
+
+                             appId=appId;  
+                         } 
+                   }            
+             }
+            return appId;
+        }" />
+        <set-variable name="OauthToken" value="@{
+            string iss = "NOISS";
+            string authHeader = context.Request.Headers.GetValueOrDefault("Authorization", "");
+
+            if (authHeader?.Length > 0)
+            { 
+                string[] authHeaderParts = authHeader.Split(' ');
+
+                if (authHeaderParts?.Length == 2 && authHeaderParts[0].Equals("Bearer", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    Jwt jwt;
+                    if (authHeaderParts[1].TryParseJwt(out jwt))
+                    {
+
+                        iss = authHeaderParts[1];
+
+                    }
+                }
+            }
+
+            return iss;
+        }" />
+        <trace source="JWT Token" severity="information">
+            <message>@(String.Format("{0} | {1}", context.Api.Name, context.Operation.Name))</message>
+            <metadata name="OauthToken" value="@((string)context.Variables["OauthToken"])" />
+        </trace>
+        <cache-lookup-value key="@((string)context.Variables["clientId"] + "_HapiToken")" variable-name="hapitoken" caching-type="external" />
+        <cache-lookup-value key="@((string)context.Variables["clientId"] + "_GoogleIdToken")" variable-name="googleidtoken" caching-type="external" />
+        <choose>
+            <when condition="@(context.Variables.ContainsKey("hapitoken") && context.Variables.ContainsKey("googleidtoken") && System.String.Equals((string)context.Variables["hapitoken"],(string)context.Variables["OauthToken"]))">
+                <set-header name="Cool-Header" exists-action="override">
+                    <value>@("Bearer " + (string)context.Variables["googleidtoken"])</value>
+                </set-header>
+            </when>
+            <otherwise>
+                <cache-store-value key="@((string)context.Variables["clientId"] + "_HapiToken")" value="@((string)context.Variables["OauthToken"])" duration="120" caching-type="external" />
+                <set-variable name="GoogleIdTokenCache" value="@(((string)context.Variables["OauthToken"]).Substring(((string)context.Variables["OauthToken"]).Length-100))" />
+                <cache-store-value key="@((string)context.Variables["clientId"] + "_GoogleIdToken")" value="@((string)context.Variables["GoogleIdTokenCache"])" duration="120" caching-type="external" />
+                <set-header name="Cool-Header" exists-action="override">
+                    <value>@("Bearer " + (string)context.Variables["GoogleIdTokenCache"])</value>
+                </set-header>
+            </otherwise>
+        </choose>
+
+
+
+
+
+
+

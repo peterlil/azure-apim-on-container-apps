@@ -1,0 +1,164 @@
+api-inspector (0.182 ms)
+{
+    "request": {
+        "method": "GET",
+        "url": "https://shgw2.peterlabs.net/echo/clone-63774/resource?param1=sample",
+        "headers": [
+            {
+                "name": "Accept",
+                "value": "*/*"
+            },
+            {
+                "name": "Host",
+                "value": "shgw2.peterlabs.net"
+            },
+            {
+                "name": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+            },
+            {
+                "name": "Accept-Encoding",
+                "value": "gzip,deflate,br"
+            },
+            {
+                "name": "Accept-Language",
+                "value": "en-US,en;q=0.9,sv;q=0.8"
+            },
+            {
+                "name": "Origin",
+                "value": "https://apimanagement.hosting.portal.azure.net"
+            },
+            {
+                "name": "Referer",
+                "value": "https://apimanagement.hosting.portal.azure.net/"
+            },
+            {
+                "name": "sec-ch-ua",
+                "value": "\"Not_A Brand\";v=\"99\",\"Microsoft Edge\";v=\"109\",\"Chromium\";v=\"109\""
+            },
+            {
+                "name": "DNT",
+                "value": "1"
+            },
+            {
+                "name": "header2",
+                "value": "HEADER2_VALUE2"
+            },
+            {
+                "name": "sec-ch-ua-mobile",
+                "value": "?0"
+            },
+            {
+                "name": "ocp-apim-subscription-key",
+                "value": "336afba91a1643c68347a6dc2ec37b6a"
+            },
+            {
+                "name": "header1",
+                "value": "HEADER1_VALUE1"
+            },
+            {
+                "name": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+            },
+            {
+                "name": "sec-fetch-site",
+                "value": "cross-site"
+            },
+            {
+                "name": "sec-fetch-mode",
+                "value": "cors"
+            },
+            {
+                "name": "sec-fetch-dest",
+                "value": "empty"
+            }
+        ]
+    }
+}
+api-inspector (0.003 ms)
+{
+    "configuration": {
+        "api": {
+            "from": "/echo",
+            "to": {
+                "scheme": "http",
+                "host": "echoapi.cloudapp.net",
+                "port": 80,
+                "path": "/api",
+                "queryString": "",
+                "query": {},
+                "isDefaultPort": true
+            },
+            "version": null,
+            "revision": "1"
+        },
+        "operation": {
+            "method": "GET",
+            "uriTemplate": "/clone-63774/resource"
+        },
+        "user": "-",
+        "product": "-"
+    }
+}
+cors (0.033 ms)
+"Cross domain request was well formed and was allowed to proceed. CORS related headers were added to the response."
+set-variable (0.011 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": " \n            string header1 = context.Request.Headers.GetValueOrDefault(\"header1\", \"\");\n            \n            return header1;\n        ",
+    "value": "HEADER1_VALUE1"
+}
+set-variable (0.011 ms)
+{
+    "message": "Context variable was successfully set.",
+    "name": "clientId",
+    "value": "HEADER1_VALUE1"
+}
+set-variable (0.004 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "\n            string iss = \"NOISS\";\n            string header2 = context.Request.Headers.GetValueOrDefault(\"header2\", \"\");\n\n            return header2;\n        ",
+    "value": "HEADER2_VALUE2"
+}
+set-variable (0.003 ms)
+{
+    "message": "Context variable was successfully set.",
+    "name": "OauthToken",
+    "value": "HEADER2_VALUE2"
+}
+cache-lookup-value (0.004 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "(string)context.Variables[\"clientId\"] + \"_HapiToken\"",
+    "value": "HEADER1_VALUE1_HapiToken"
+}
+cache-lookup-value (0.003 ms)
+"Using cache 'home'."
+cache-lookup-value (44.675 ms)
+{
+    "message": "Cache lookup resulted in a hit.",
+    "key": "2_HEADER1_VALUE1_HapiToken",
+    "value": "HEADER2_VALUE2",
+    "variableName": "hapitoken"
+}
+cache-store-value (0.027 ms)
+"Using cache 'home'."
+cache-store-value (0.009 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "(string)context.Variables[\"clientId\"] + \"_HapiToken\"",
+    "value": "HEADER1_VALUE1_HapiToken"
+}
+cache-store-value (0.004 ms)
+{
+    "message": "Expression was successfully evaluated.",
+    "expression": "(string)context.Variables[\"OauthToken\"]",
+    "value": "HEADER2_VALUE2"
+}
+cache-store-value (0.062 ms)
+{
+    "message": "Value stored in cache.",
+    "key": "2_HEADER1_VALUE1_HapiToken",
+    "value": "HEADER2_VALUE2",
+    "timeout": "00:02:00"
+}
