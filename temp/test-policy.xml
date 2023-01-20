@@ -1,0 +1,26 @@
+<policies>
+    <inbound>
+        <base />
+            <set-variable name="clientId" value="@{
+                string header1 = context.Request.Headers.GetValueOrDefault("header1", "");
+                return header1;
+            }" />
+
+            <set-variable name="OauthToken" value="@{
+                string iss = "NOISS";
+                string header2 = context.Request.Headers.GetValueOrDefault("header2", "");
+                return header2;
+            }" />
+            <cache-lookup-value key="@((string)context.Variables["clientId"] + "_HapiToken")" variable-name="hapitoken" caching-type="external" />
+            <cache-store-value key="@((string)context.Variables["clientId"] + "_HapiToken")" value="@((string)context.Variables["OauthToken"])" duration="120" caching-type="external" />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>
